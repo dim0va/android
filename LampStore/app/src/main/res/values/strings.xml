@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Lamp Store</string>
+    <string name="lamp">Lamp</string>
+    <string name="star">Star</string>
+    <string name="reviews">249 Review</string>
+    <string name="deft_accessories">Deft accessories</string>
+    <string name="table_lamp">Table Lamp</string>
+    <string name="edison_table_lamp">Edison Table Lamp</string>
+    <string name="lamp_price">99$</string>
+    <string name="heart">Heart</string>
+    <string name="edison_regular_price">750$</string>
+    <string name="edison_new_price">349.99$</string>
+    <string name="suggested_for_you">Suggested for you</string>
+    <string name="view_all">View all</string>
+    <string name="_new">New</string>
+    <string name="popular">Popular</string>
+    <string name="trendy">Trendy</string>
+    <string name="best_sellers">Best Sellers</string>
+    <string name="explore">explore</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
+    <string name="username">Username</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="not_registered">Not registered?</string>
+    <string name="create_account">Create account</string>
+    <string name="have_account">You already have an account?</string>
+    <string name="buy">Buy</string>
+</resources>

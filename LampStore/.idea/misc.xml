@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/grey_circular_border.xml" value="0.3755" />
+        <entry key="app/src/main/res/drawable/grey_circular_border2.xml" value="0.228" />
+        <entry key="app/src/main/res/drawable/light_orange_circle.xml" value="0.3755" />
+        <entry key="app/src/main/res/drawable/rounded_orange_rect_shape.xml" value="0.228" />
+        <entry key="app/src/main/res/drawable/rounded_rect_shape.xml" value="0.228" />
+        <entry key="app/src/main/res/drawable/violer_circular_border.xml" value="0.3755" />
+        <entry key="app/src/main/res/drawable/violet_circular_border.xml" value="0.337" />
+        <entry key="app/src/main/res/drawable/white_circular_border.xml" value="0.3755" />
+        <entry key="app/src/main/res/layout-large/activity_login.xml" value="0.19869791666666667" />
+        <entry key="app/src/main/res/layout-large/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout-large/activity_signup.xml" value="0.16380208333333332" />
+        <entry key="app/src/main/res/layout-large/activity_single_product.xml" value="0.18385416666666668" />
+        <entry key="app/src/main/res/layout-small/activity_login.xml" value="0.16744791666666667" />
+        <entry key="app/src/main/res/layout-small/activity_main.xml" value="0.67" />
+        <entry key="app/src/main/res/layout-small/activity_signup.xml" value="0.33" />
+        <entry key="app/src/main/res/layout-small/activity_single_product.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.274903805044891" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.274903805044891" />
+        <entry key="app/src/main/res/layout/activity_single_product.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

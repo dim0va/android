@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical"
+    tools:context=".SingleProductActivity">
+
+    <!-- Top Navigation -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/xsmall">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/grey_circular_border"
+            android:padding="9dp"
+            android:src="@drawable/square_icon"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/logo"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/explore"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/grey_circular_border"
+            android:padding="9dp"
+            android:src="@drawable/loupe"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <!-- Filters  -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/medium"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/medium"
+                android:text="@string/_new"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/medium"
+                android:text="@string/popular"
+                android:textColor="@color/purple"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/trendy"
+                android:textStyle="bold"
+                android:paddingHorizontal="@dimen/medium" />
+
+            <TextView
+                android:gravity="center"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/best_sellers"
+                android:textStyle="bold"
+                android:paddingHorizontal="@dimen/medium" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Body -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            >
+
+            <TableRow>
+                <FrameLayout
+                    android:padding="@dimen/xsmall"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView android:layout_width="wrap_content"
+                            android:src="@drawable/lamp4"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="@dimen/medium"
+                            android:background="@drawable/grey_circular_border2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/lamp"
+                            android:textColor="@color/purple"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_marginTop="@dimen/xsmall"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/edison_new_price"
+                                android:textColor="@color/orange"
+                                android:textStyle="bold"
+                                android:textSize="11sp"/>
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:contentDescription="@string/heart"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:padding="6.5dp"
+                                android:src="@drawable/heart_orange_fill"
+                                android:background="@drawable/light_orange_circle"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/xsmall">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView android:layout_width="wrap_content"
+                            android:src="@drawable/lamp4"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="@dimen/medium"
+                            android:background="@drawable/grey_circular_border2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/xsmall"
+                            android:text="@string/lamp"
+                            android:textColor="@color/purple"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/edison_new_price"
+                                android:textColor="@color/orange"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/light_orange_circle"
+                                android:contentDescription="@string/heart"
+                                android:padding="6.5dp"
+                                android:src="@drawable/heart_orange_fill" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow>
+                <FrameLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/xsmall">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView android:layout_width="wrap_content"
+                            android:src="@drawable/lamp4"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="@dimen/medium"
+                            android:background="@drawable/grey_circular_border2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/lamp"
+                            android:textColor="@color/purple"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_marginTop="@dimen/xsmall"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/edison_new_price"
+                                android:textColor="@color/orange"
+                                android:textStyle="bold"
+                                android:textSize="11sp"/>
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:contentDescription="@string/heart"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:padding="6.5dp"
+                                android:src="@drawable/heart_orange_fill"
+                                android:background="@drawable/light_orange_circle"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/xsmall">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView android:layout_width="wrap_content"
+                            android:src="@drawable/lamp4"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="@dimen/medium"
+                            android:background="@drawable/grey_circular_border2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/lamp"
+                            android:textColor="@color/purple"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_marginTop="@dimen/xsmall"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/edison_new_price"
+                                android:textColor="@color/orange"
+                                android:textStyle="bold"
+                                android:textSize="11sp"/>
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:contentDescription="@string/heart"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:padding="6.5dp"
+                                android:src="@drawable/heart_orange_fill"
+                                android:background="@drawable/light_orange_circle"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow>
+                <FrameLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/xsmall">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView android:layout_width="wrap_content"
+                            android:src="@drawable/lamp4"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="@dimen/medium"
+                            android:background="@drawable/grey_circular_border2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/lamp"
+                            android:textColor="@color/purple"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_marginTop="@dimen/xsmall"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/edison_new_price"
+                                android:textColor="@color/orange"
+                                android:textStyle="bold"
+                                android:textSize="11sp"/>
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:contentDescription="@string/heart"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:padding="6.5dp"
+                                android:src="@drawable/heart_orange_fill"
+                                android:background="@drawable/light_orange_circle"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="@dimen/xsmall">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView android:layout_width="wrap_content"
+                            android:src="@drawable/lamp4"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="@dimen/medium"
+                            android:background="@drawable/grey_circular_border2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/lamp"
+                            android:textColor="@color/purple"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:layout_marginTop="@dimen/xsmall"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/edison_new_price"
+                                android:textColor="@color/orange"
+                                android:textStyle="bold"
+                                android:textSize="11sp"/>
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:contentDescription="@string/heart"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:padding="6.5dp"
+                                android:src="@drawable/heart_orange_fill"
+                                android:background="@drawable/light_orange_circle"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
