@@ -28,4 +28,7 @@
     <string name="create_account">Create account</string>
     <string name="have_account">You already have an account?</string>
     <string name="buy">Buy</string>
+    <string name="shopping_bag">shopping bag</string>
+    <string name="check_out">Check out</string>
+    <string name="total">Total</string>
 </resources>
