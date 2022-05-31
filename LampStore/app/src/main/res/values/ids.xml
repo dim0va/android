@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="login_link" type="id" />
+    <item name="login" type="id" />
+    <item name="product_item" type="id" />
+    <item name="buy_btn" type="id" />
+    <item name="product_image" type="id" />
+</resources>

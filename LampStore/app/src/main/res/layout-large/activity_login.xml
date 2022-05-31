@@ -9,7 +9,7 @@
     tools:context=".LoginActivity"
     android:gravity="center"
     android:paddingVertical="@dimen/medium"
-    android:paddingHorizontal="@dimen/xlarge">
+    android:paddingHorizontal="200dp">
 
     <ImageView
         android:layout_width="match_parent"
@@ -50,6 +50,7 @@
         />
 
     <Button
+        android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_orange_rect_shape"
